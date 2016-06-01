@@ -7,6 +7,6 @@
 #include <unistd.h>
 
 int main(int argc,char **argv){
-	printf("hello world ! \n");
-	return 0;
+  printf("Sistemas Operativos UMG 2016! \n");
+  return 0;
 }
