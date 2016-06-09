@@ -28,6 +28,6 @@ int puts( char *message )
 
 int main( void )
 {
-  puts("Hello, world!"); /* Print our welcome message */
+  puts("Sistema Operativo - UMG!"); /* Print our welcome message */
   for(;;); /* Keep the OS running */
 }

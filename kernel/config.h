@@ -1,12 +1,12 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define KERNEL_NAME "oss"
+#define KERNEL_NAME "umg-oss"
 #define KERNEL_VERSION "0.0.1"
 #define KERNEL_DATE __DATE__
 #define KERNEL_TIME __TIME_
 #define KERNEL_LICENCE "Apache License"
-#define KERNEL_COMPUTERNAME "awesome-pc"
+#define KERNEL_COMPUTERNAME "umg-pc"
 
 /* Procesador */
 #ifdef __x86__

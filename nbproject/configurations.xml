@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="kernel">
+        <df name="arch">
+          <df name="x86">
+            <in>alloc.cc</in>
+            <in>architecture.cc</in>
+            <in>io.cc</in>
+            <in>vmm.cc</in>
+            <in>x86.cc</in>
+          </df>
+        </df>
+        <df name="core">
+          <in>api_posix.cc</in>
+          <in>class.cc</in>
+          <in>device.cc</in>
+          <in>elf_loader.cc</in>
+          <in>env.cc</in>
+          <in>file.cc</in>
+          <in>filesystem.cc</in>
+          <in>kernel.cc</in>
+          <in>modulelink.cc</in>
+          <in>process.cc</in>
+          <in>socket.cc</in>
+          <in>syscalls.cc</in>
+          <in>system.cc</in>
+          <in>user.cc</in>
+        </df>
+        <df name="modules">
+          <in>bochsvbe.cc</in>
+          <in>clock_x86.cc</in>
+          <in>dospartition.cc</in>
+          <in>ext2.cc</in>
+          <in>ide.cc</in>
+          <in>keys.cc</in>
+          <in>module.cc</in>
+          <in>null.cc</in>
+          <in>stdtty.cc</in>
+          <in>x86serial.cc</in>
+        </df>
+        <df name="runtime">
+          <in>buffer.cc</in>
+          <in>cxx.cc</in>
+          <in>itoa.cc</in>
+          <in>memory.cc</in>
+          <in>string.cc</in>
+        </df>
+      </df>
+      <df name="sdk">
+        <df name="src">
+          <df name="libc">
+            <df name="arch">
+              <df name="i386">
+                <in>getpagesize.c</in>
+              </df>
+            </df>
+            <df name="src">
+              <df name="ctype">
+                <in>isalnum.c</in>
+                <in>isalpha.c</in>
+                <in>isascii.c</in>
+                <in>isblank.c</in>
+                <in>iscntrl.c</in>
+                <in>isdigit.c</in>
+                <in>isgraph.c</in>
+                <in>islower.c</in>
+                <in>isprint.c</in>
+                <in>ispunct.c</in>
+                <in>isspace.c</in>
+                <in>isupper.c</in>
+                <in>isxdigit.c</in>
+                <in>toascii.c</in>
+                <in>tolower.c</in>
+                <in>toupper.c</in>
+              </df>
+              <df name="fcntl">
+                <in>creat.c</in>
+                <in>fcntl.c</in>
+                <in>open.c</in>
+              </df>
+              <df name="getopt">
+                <in>getopt.c</in>
+                <in>getopt_long.c</in>
+                <in>getopt_long_only.c</in>
+              </df>
+              <df name="locale">
+                <in>localeconv.c</in>
+                <in>setlocale.c</in>
+              </df>
+              <df name="math">
+                <in>s_ldexp.c</in>
+                <in>s_modf.c</in>
+              </df>
+              <df name="network">
+                <in>inet_aton.c</in>
+                <in>inet_ntoa.c</in>
+              </df>
+              <df name="os">
+                <in>debug.c</in>
+                <in>ipc.c</in>
+                <in>module.c</in>
+                <in>os.c</in>
+                <in>region.c</in>
+                <in>semaphore.c</in>
+                <in>syscall.c</in>
+                <in>sysinfo.c</in>
+                <in>thread.c</in>
+              </df>
+              <df name="pwd">
+                <in>endpwent.c</in>
+                <in>getpwent.c</in>
+                <in>getpwnam.c</in>
+                <in>getpwuid.c</in>
+                <in>setpwent.c</in>
+              </df>
+              <df name="signal">
+                <in>kill.c</in>
+                <in>killpg.c</in>
+                <in>raise.c</in>
+                <in>sigaction.c</in>
+                <in>sigaddset.c</in>
+                <in>sigdelset.c</in>
+                <in>sigemptyset.c</in>
+                <in>sigfillset.c</in>
+                <in>sigismember.c</in>
+                <in>signal.c</in>
+                <in>sigprocmask.c</in>
+              </df>
+              <df name="stdio">
+                <in>clearerr.c</in>
+                <in>fclose.c</in>
+                <in>fdopen.c</in>
+                <in>feof.c</in>
+                <in>ferror.c</in>
+                <in>fflush.c</in>
+                <in>fgetc.c</in>
+                <in>fgets.c</in>
+                <in>fileno.c</in>
+                <in>fopen.c</in>
+                <in>fpurge.c</in>
+                <in>fputc.c</in>
+                <in>fputs.c</in>
+                <in>fread.c</in>
+                <in>freopen.c</in>
+                <in>fseek.c</in>
+                <in>ftell.c</in>
+                <in>fwrite.c</in>
+                <in>getc.c</in>
+                <in>perror.c</in>
+                <in>putc.c</in>
+                <in>putchar.c</in>
+                <in>puts.c</in>
+                <in>remove.c</in>
+                <in>rename.c</in>
+                <in>rewind.c</in>
+                <in>setvbuf.c</in>
+                <in>stdio_internal.c</in>
+                <in>streams.c</in>
+                <in>support_bufio.c</in>
+                <in>support_pf.c</in>
+                <in>support_supcon.c</in>
+                <in>ungetc.c</in>
+              </df>
+              <df name="stdlib">
+                <in>abort.c</in>
+                <in>abs.c</in>
+                <in>atof.c</in>
+                <in>atoi.c</in>
+                <in>atol.c</in>
+                <in>atoll.c</in>
+                <in>bsearch.c</in>
+                <in>getenv.c</in>
+                <in>labs.c</in>
+                <in>llabs.c</in>
+                <in>malloc.c</in>
+                <in>mkstemp.c</in>
+                <in>mktemp.c</in>
+                <in>qsort.c</in>
+                <in>rand.c</in>
+                <in>random.c</in>
+                <in>srand.c</in>
+                <in>srandom.c</in>
+                <in>strtod.c</in>
+                <in>strtol.c</in>
+                <in>strtoll.c</in>
+                <in>strtoul.c</in>
+                <in>strtoull.c</in>
+              </df>
+              <df name="string">
+                <in>memchr.c</in>
+                <in>memcmp.c</in>
+                <in>memcpy.c</in>
+                <in>memmove.c</in>
+                <in>memset.c</in>
+                <in>strcasecmp.c</in>
+                <in>strcat.c</in>
+                <in>strchr.c</in>
+                <in>strcmp.c</in>
+                <in>strcpy.c</in>
+                <in>strcspn.c</in>
+                <in>strdup.c</in>
+                <in>strerror.c</in>
+                <in>strlen.c</in>
+                <in>strncasecmp.c</in>
+                <in>strncat.c</in>
+                <in>strncmp.c</in>
+                <in>strncpy.c</in>
+                <in>strndup.c</in>
+                <in>strnlen.c</in>
+                <in>strpbrk.c</in>
+                <in>strrchr.c</in>
+                <in>strsignal.c</in>
+                <in>strspn.c</in>
+                <in>strstr.c</in>
+                <in>strtok.c</in>
+                <in>strtok_r.c</in>
+              </df>
+              <df name="sys">
+                <in>chmod.c</in>
+                <in>connect.c</in>
+                <in>fstat.c</in>
+                <in>ioctl.c</in>
+                <in>lstat.c</in>
+                <in>mkdir.c</in>
+                <in>mount.c</in>
+                <in>select.c</in>
+                <in>socket.c</in>
+                <in>stat.c</in>
+                <in>stime.c</in>
+                <in>umask.c</in>
+                <in>umount.c</in>
+                <in>utime.c</in>
+                <in>utimes.c</in>
+                <in>wait.c</in>
+                <in>wait3.c</in>
+                <in>wait4.c</in>
+                <in>waitpid.c</in>
+              </df>
+              <df name="termios">
+                <in>tcflow.c</in>
+                <in>tcflush.c</in>
+                <in>tcgetattr.c</in>
+                <in>tcgetpgrp.c</in>
+                <in>tcsetattr.c</in>
+                <in>tcsetpgrp.c</in>
+              </df>
+              <df name="time">
+                <in>asctime.c</in>
+                <in>asctime_r.c</in>
+                <in>ctime.c</in>
+                <in>ctime_r.c</in>
+                <in>gettimeofday.c</in>
+                <in>gmtime.c</in>
+                <in>gmtime_r.c</in>
+                <in>localtime.c</in>
+                <in>localtime_r.c</in>
+                <in>mktime.c</in>
+                <in>nanosleep.c</in>
+                <in>strftime.c</in>
+                <in>time.c</in>
+                <in>time_int.c</in>
+                <in>tzset.c</in>
+              </df>
+              <df name="trio">
+                <in>trio.c</in>
+                <in>trionan.c</in>
+                <in>triostr.c</in>
+              </df>
+              <df name="unistd">
+                <in>access.c</in>
+                <in>alarm.c</in>
+                <in>chdir.c</in>
+                <in>chown.c</in>
+                <in>close.c</in>
+                <in>dup.c</in>
+                <in>dup2.c</in>
+                <in>execlp.c</in>
+                <in>execv.c</in>
+                <in>execve.c</in>
+                <in>execvp.c</in>
+                <in>exit.c</in>
+                <in>fchdir.c</in>
+                <in>fork.c</in>
+                <in>fpathconf.c</in>
+                <in>ftruncate.c</in>
+                <in>getcwd.c</in>
+                <in>getdents.c</in>
+                <in>getdtablesize.c</in>
+                <in>getegid.c</in>
+                <in>geteuid.c</in>
+                <in>getgid.c</in>
+                <in>gethostname.c</in>
+                <in>getpgid.c</in>
+                <in>getpgrp.c</in>
+                <in>getpid.c</in>
+                <in>getppid.c</in>
+                <in>gettid.c</in>
+                <in>getuid.c</in>
+                <in>isatty.c</in>
+                <in>link.c</in>
+                <in>lseek.c</in>
+                <in>mmap.c</in>
+                <in>pipe.c</in>
+                <in>pread.c</in>
+                <in>pwrite.c</in>
+                <in>read.c</in>
+                <in>readlink.c</in>
+                <in>rmdir.c</in>
+                <in>sbrk.c</in>
+                <in>setgid.c</in>
+                <in>setpgid.c</in>
+                <in>setpgrp.c</in>
+                <in>setregid.c</in>
+                <in>setreuid.c</in>
+                <in>setuid.c</in>
+                <in>sleep.c</in>
+                <in>symlink.c</in>
+                <in>ttyname.c</in>
+                <in>unlink.c</in>
+                <in>write.c</in>
+              </df>
+              <in>closedir.c</in>
+              <in>opendir.c</in>
+              <in>readdir.c</in>
+              <in>rewinddir.c</in>
+              <in>sscanf.c</in>
+              <in>start.c</in>
+              <in>udivmoddi4.c</in>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="userland">
+        <df name="helloworld">
+          <in>main.c</in>
+        </df>
+      </df>
+      <in>kernel.cpp</in>
+      <in>putc.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <folder path="0/kernel/arch">
+        <ccTool>
+          <incDir>
+            <pElem>kernel/arch/x86</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/kernel/core">
+        <ccTool>
+          <incDir>
+            <pElem>kernel/core</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/kernel/modules">
+        <ccTool>
+          <incDir>
+            <pElem>kernel/modules</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/kernel/runtime">
+        <ccTool>
+          <incDir>
+            <pElem>kernel/runtime</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/sdk/src/libc/arch">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/arch/i386</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/ctype">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/ctype</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/fcntl">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/fcntl</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/getopt">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/getopt</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/locale">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/locale</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/math">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/math</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/network">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/network</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/os">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/os</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/pwd">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/pwd</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/signal">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/signal</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/stdio">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/stdio</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/stdlib">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/stdlib</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/string">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/string</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/sys">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/sys</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/termios">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/termios</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/time">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/time</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/trio">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/trio</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/sdk/src/libc/src/unistd">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src/unistd</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/userland">
+        <cTool>
+          <incDir>
+            <pElem>userland/helloworld</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="kernel.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="kernel/arch/x86/alloc.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/arch/x86/architecture.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/arch/x86/io.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/arch/x86/vmm.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/arch/x86/x86.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/api_posix.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/class.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/device.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/elf_loader.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/env.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/file.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/filesystem.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/kernel.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/modulelink.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/process.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/socket.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/syscalls.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/system.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/core/user.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/bochsvbe.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/clock_x86.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/dospartition.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/ext2.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/ide.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/keys.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/module.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/null.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/stdtty.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/modules/x86serial.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/runtime/buffer.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/runtime/cxx.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/runtime/itoa.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/runtime/memory.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="kernel/runtime/string.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="putc.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="sdk/src/libc/arch/i386/getpagesize.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/closedir.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/ctype/isalnum.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isalpha.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isascii.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isblank.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/iscntrl.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isdigit.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isgraph.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/islower.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isprint.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/ispunct.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isspace.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isupper.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/isxdigit.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/toascii.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/tolower.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/ctype/toupper.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/fcntl/creat.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/fcntl/fcntl.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/fcntl/open.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/getopt/getopt.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/getopt/getopt_long.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/getopt/getopt_long_only.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/locale/localeconv.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/locale/setlocale.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/math/s_ldexp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/math/s_modf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/network/inet_aton.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/network/inet_ntoa.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/opendir.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/os/debug.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/ipc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/module.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/os.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/region.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/semaphore.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/syscall.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/sysinfo.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/os/thread.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/pwd/endpwent.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/pwd/getpwent.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/pwd/getpwnam.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/pwd/getpwuid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/pwd/setpwent.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/readdir.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/rewinddir.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/signal/kill.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/killpg.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/raise.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigaction.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigaddset.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigdelset.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigemptyset.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigfillset.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigismember.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/signal.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/signal/sigprocmask.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sscanf.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/start.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/stdio/clearerr.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fclose.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fdopen.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/feof.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/ferror.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fflush.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fgetc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fgets.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fileno.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fopen.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fpurge.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fputc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fputs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fread.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/freopen.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fseek.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/ftell.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/fwrite.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/getc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/perror.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/putc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/putchar.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/puts.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/remove.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/rename.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/rewind.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/setvbuf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/stdio_internal.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/streams.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/support_bufio.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/support_pf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/support_supcon.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdio/ungetc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/abort.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/abs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/atof.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/atoi.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/atol.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/atoll.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/bsearch.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/getenv.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/labs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/llabs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/malloc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/mkstemp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/mktemp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/qsort.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/rand.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/random.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/srand.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/srandom.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/strtod.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/strtol.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/strtoll.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/strtoul.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/stdlib/strtoull.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/memchr.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/memcmp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/memcpy.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/memmove.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/memset.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strcasecmp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strcat.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strchr.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strcmp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strcpy.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strcspn.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strdup.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strerror.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strlen.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strncasecmp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strncat.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strncmp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strncpy.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strndup.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strnlen.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strpbrk.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strrchr.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strsignal.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strspn.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strstr.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strtok.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/string/strtok_r.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/chmod.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/connect.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/fstat.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/ioctl.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/lstat.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/mkdir.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/mount.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/select.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/socket.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/stat.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/stime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/umask.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/umount.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/utime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/utimes.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/wait.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/wait3.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/wait4.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/sys/waitpid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/termios/tcflow.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/termios/tcflush.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/termios/tcgetattr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/termios/tcgetpgrp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/termios/tcsetattr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/termios/tcsetpgrp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/asctime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/asctime_r.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/ctime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/ctime_r.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/gettimeofday.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/gmtime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/gmtime_r.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/localtime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/localtime_r.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/mktime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/nanosleep.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/strftime.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/time.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/time_int.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/time/tzset.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/trio/trio.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/trio/trionan.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/trio/triostr.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/udivmoddi4.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>sdk/src/libc/src</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="sdk/src/libc/src/unistd/access.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/alarm.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/chdir.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/chown.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/close.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/dup.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/dup2.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/execlp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/execv.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/execve.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/execvp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/exit.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/fchdir.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/fork.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/fpathconf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/ftruncate.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getcwd.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getdents.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getdtablesize.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getegid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/geteuid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getgid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/gethostname.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getpgid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getpgrp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getpid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getppid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/gettid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/getuid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/isatty.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/link.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/lseek.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/mmap.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/pipe.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/pread.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/pwrite.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/read.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/readlink.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/rmdir.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/sbrk.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/setgid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/setpgid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/setpgrp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/setregid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/setreuid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/setuid.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/sleep.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/symlink.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/ttyname.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/unlink.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="sdk/src/libc/src/unistd/write.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="userland/helloworld/main.c" ex="false" tool="0" flavor2="2">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

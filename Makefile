@@ -20,7 +20,7 @@ build:
 
 
 run:
-	@echo "Running Dev Operating System."
+	@echo "Running UMG dev Operating System."
 	cd ./sdk && sudo bash ./diskimage.sh
 	cd ./sdk && ./qemu.sh
 

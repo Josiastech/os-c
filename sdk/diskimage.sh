@@ -1,4 +1,5 @@
 #!/bin/bash
+# Create the disk image
 qemu-img create c.img 2M
 fdisk ./c.img  << EOF
 x

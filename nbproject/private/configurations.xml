@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="kernel">
+        <df name="arch">
+          <df name="x86">
+            <in>alloc.cc</in>
+            <in>architecture.cc</in>
+            <in>architecture.h</in>
+            <in>archprocess.h</in>
+            <in>io.cc</in>
+            <in>io.h</in>
+            <in>start.asm</in>
+            <in>switch.asm</in>
+            <in>vmm.cc</in>
+            <in>vmm.h</in>
+            <in>x86.cc</in>
+            <in>x86.h</in>
+            <in>x86int.asm</in>
+          </df>
+        </df>
+        <df name="core">
+          <df name="api">
+            <df name="dev">
+              <in>clock.h</in>
+              <in>fb.h</in>
+              <in>ioctl.h</in>
+              <in>ipc.h</in>
+              <in>keyboard.h</in>
+              <in>proc.h</in>
+              <in>tty.h</in>
+            </df>
+            <df name="kernel">
+              <in>syscall.h</in>
+              <in>syscall_table.h</in>
+            </df>
+          </df>
+          <in>api.h</in>
+          <in>api_posix.cc</in>
+          <in>boot.h</in>
+          <in>class.cc</in>
+          <in>device.cc</in>
+          <in>device.h</in>
+          <in>elf_loader.cc</in>
+          <in>elf_loader.h</in>
+          <in>env.cc</in>
+          <in>env.h</in>
+          <in>file.cc</in>
+          <in>file.h</in>
+          <in>filesystem.cc</in>
+          <in>filesystem.h</in>
+          <in>kernel.cc</in>
+          <in>kernel.h</in>
+          <in>keyboard.h</in>
+          <in>modulelink.cc</in>
+          <in>modulelink.h</in>
+          <in>os.h</in>
+          <in>process.cc</in>
+          <in>process.h</in>
+          <in>signal.h</in>
+          <in>socket.cc</in>
+          <in>socket.h</in>
+          <in>syscalls.cc</in>
+          <in>syscalls.h</in>
+          <in>system.cc</in>
+          <in>system.h</in>
+          <in>user.cc</in>
+          <in>user.h</in>
+        </df>
+        <df name="modules">
+          <in>bochsvbe.cc</in>
+          <in>bochsvbe.h</in>
+          <in>clock_x86.cc</in>
+          <in>clock_x86.h</in>
+          <in>dospartition.cc</in>
+          <in>dospartition.h</in>
+          <in>ext2.cc</in>
+          <in>ext2.h</in>
+          <in>ide.cc</in>
+          <in>ide.h</in>
+          <in>keys.cc</in>
+          <in>keys.h</in>
+          <in>module.cc</in>
+          <in>module.h</in>
+          <in>modules.conf</in>
+          <in>null.cc</in>
+          <in>null.h</in>
+          <in>stdtty.cc</in>
+          <in>stdtty.h</in>
+          <in>x86serial.cc</in>
+          <in>x86serial.h</in>
+        </df>
+        <df name="runtime">
+          <in>alloc.h</in>
+          <in>buffer.cc</in>
+          <in>buffer.h</in>
+          <in>cxx.cc</in>
+          <in>itoa.cc</in>
+          <in>libc.h</in>
+          <in>list.h</in>
+          <in>memory.cc</in>
+          <in>string.cc</in>
+          <in>string.h</in>
+          <in>types.h</in>
+        </df>
+        <in>config.h</in>
+      </df>
+      <df name="sdk">
+        <df name="bootdisk">
+          <df name="bin">
+          </df>
+          <df name="boot">
+            <df name="grub">
+              <in>grub.conf</in>
+            </df>
+          </df>
+        </df>
+        <df name="include">
+          <df name="arpa">
+            <in>inet.h</in>
+          </df>
+          <df name="netinet">
+            <in>in.h</in>
+          </df>
+          <df name="sys">
+            <in>cdefs.h</in>
+            <in>ioctl.h</in>
+            <in>mman.h</in>
+            <in>mount.h</in>
+            <in>param.h</in>
+            <in>resource.h</in>
+            <in>select.h</in>
+            <in>socket.h</in>
+            <in>stat.h</in>
+            <in>time.h</in>
+            <in>types.h</in>
+            <in>wait.h</in>
+          </df>
+          <in>_ansi.h</in>
+          <in>alloca.h</in>
+          <in>assert.h</in>
+          <in>ctype.h</in>
+          <in>dirent.h</in>
+          <in>endian.h</in>
+          <in>errno.h</in>
+          <in>fcntl.h</in>
+          <in>float.h</in>
+          <in>getopt.h</in>
+          <in>inttypes.h</in>
+          <in>limits.h</in>
+          <in>locale.h</in>
+          <in>math.h</in>
+          <in>os.h</in>
+          <in>pwd.h</in>
+          <in>setjmp.h</in>
+          <in>signal.h</in>
+          <in>stdarg.h</in>
+          <in>stddef.h</in>
+          <in>stdint.h</in>
+          <in>stdio.h</in>
+          <in>stdlib.h</in>
+          <in>string.h</in>
+          <in>strings.h</in>
+          <in>termios.h</in>
+          <in>time.h</in>
+          <in>unistd.h</in>
+          <in>utime.h</in>
+        </df>
+        <df name="lib">
+        </df>
+        <df name="src">
+          <df name="libc">
+            <df name="arch">
+              <df name="i386">
+                <df name="math">
+                  <in>e_atan2.S</in>
+                  <in>e_exp.S</in>
+                  <in>e_fmod.S</in>
+                  <in>e_hypot.S</in>
+                  <in>e_log.S</in>
+                  <in>e_log10.S</in>
+                  <in>e_pow.S</in>
+                  <in>s_ceil.S</in>
+                  <in>s_cos.S</in>
+                  <in>s_fabs.S</in>
+                  <in>s_finite.S</in>
+                  <in>s_floor.S</in>
+                  <in>s_frexp.S</in>
+                  <in>s_scalbn.S</in>
+                  <in>s_sin.S</in>
+                </df>
+                <in>getpagesize.c</in>
+                <in>longjmp.S</in>
+                <in>setjmp.S</in>
+              </df>
+            </df>
+            <df name="src">
+              <df name="ctype">
+                <in>isalnum.c</in>
+                <in>isalpha.c</in>
+                <in>isascii.c</in>
+                <in>isblank.c</in>
+                <in>iscntrl.c</in>
+                <in>isdigit.c</in>
+                <in>isgraph.c</in>
+                <in>islower.c</in>
+                <in>isprint.c</in>
+                <in>ispunct.c</in>
+                <in>isspace.c</in>
+                <in>isupper.c</in>
+                <in>isxdigit.c</in>
+                <in>toascii.c</in>
+                <in>tolower.c</in>
+                <in>toupper.c</in>
+              </df>
+              <df name="fcntl">
+                <in>creat.c</in>
+                <in>fcntl.c</in>
+                <in>open.c</in>
+              </df>
+              <df name="getopt">
+                <in>getopt.c</in>
+                <in>getopt_int.h</in>
+                <in>getopt_long.c</in>
+                <in>getopt_long_only.c</in>
+              </df>
+              <df name="locale">
+                <in>localeconv.c</in>
+                <in>setlocale.c</in>
+              </df>
+              <df name="math">
+                <in>s_ldexp.c</in>
+                <in>s_modf.c</in>
+              </df>
+              <df name="network">
+                <in>inet_aton.c</in>
+                <in>inet_ntoa.c</in>
+              </df>
+              <df name="os">
+                <in>debug.c</in>
+                <in>ipc.c</in>
+                <in>module.c</in>
+                <in>os.c</in>
+                <in>region.c</in>
+                <in>semaphore.c</in>
+                <in>syscall.c</in>
+                <in>sysinfo.c</in>
+                <in>thread.c</in>
+              </df>
+              <df name="pwd">
+                <in>endpwent.c</in>
+                <in>getpwent.c</in>
+                <in>getpwnam.c</in>
+                <in>getpwuid.c</in>
+                <in>setpwent.c</in>
+              </df>
+              <df name="signal">
+                <in>kill.c</in>
+                <in>killpg.c</in>
+                <in>raise.c</in>
+                <in>sigaction.c</in>
+                <in>sigaddset.c</in>
+                <in>sigdelset.c</in>
+                <in>sigemptyset.c</in>
+                <in>sigfillset.c</in>
+                <in>sigismember.c</in>
+                <in>signal.c</in>
+                <in>sigprocmask.c</in>
+              </df>
+              <df name="stdio">
+                <in>clearerr.c</in>
+                <in>fclose.c</in>
+                <in>fdopen.c</in>
+                <in>feof.c</in>
+                <in>ferror.c</in>
+                <in>fflush.c</in>
+                <in>fgetc.c</in>
+                <in>fgets.c</in>
+                <in>fileno.c</in>
+                <in>fopen.c</in>
+                <in>fpurge.c</in>
+                <in>fputc.c</in>
+                <in>fputs.c</in>
+                <in>fread.c</in>
+                <in>freopen.c</in>
+                <in>fseek.c</in>
+                <in>ftell.c</in>
+                <in>fwrite.c</in>
+                <in>getc.c</in>
+                <in>perror.c</in>
+                <in>putc.c</in>
+                <in>putchar.c</in>
+                <in>puts.c</in>
+                <in>remove.c</in>
+                <in>rename.c</in>
+                <in>rewind.c</in>
+                <in>setvbuf.c</in>
+                <in>stdio_internal.c</in>
+                <in>stdio_internal.h</in>
+                <in>streams.c</in>
+                <in>support_bufio.c</in>
+                <in>support_pf.c</in>
+                <in>support_supcon.c</in>
+                <in>ungetc.c</in>
+              </df>
+              <df name="stdlib">
+                <in>abort.c</in>
+                <in>abs.c</in>
+                <in>atof.c</in>
+                <in>atoi.c</in>
+                <in>atol.c</in>
+                <in>atoll.c</in>
+                <in>bsearch.c</in>
+                <in>getenv.c</in>
+                <in>labs.c</in>
+                <in>llabs.c</in>
+                <in>malloc.c</in>
+                <in>mkstemp.c</in>
+                <in>mktemp.c</in>
+                <in>qsort.c</in>
+                <in>rand.c</in>
+                <in>random.c</in>
+                <in>srand.c</in>
+                <in>srandom.c</in>
+                <in>strtod.c</in>
+                <in>strtol.c</in>
+                <in>strtoll.c</in>
+                <in>strtoul.c</in>
+                <in>strtoull.c</in>
+              </df>
+              <df name="string">
+                <in>memchr.c</in>
+                <in>memcmp.c</in>
+                <in>memcpy.c</in>
+                <in>memmove.c</in>
+                <in>memset.c</in>
+                <in>strcasecmp.c</in>
+                <in>strcat.c</in>
+                <in>strchr.c</in>
+                <in>strcmp.c</in>
+                <in>strcpy.c</in>
+                <in>strcspn.c</in>
+                <in>strdup.c</in>
+                <in>strerror.c</in>
+                <in>strlen.c</in>
+                <in>strncasecmp.c</in>
+                <in>strncat.c</in>
+                <in>strncmp.c</in>
+                <in>strncpy.c</in>
+                <in>strndup.c</in>
+                <in>strnlen.c</in>
+                <in>strpbrk.c</in>
+                <in>strrchr.c</in>
+                <in>strsignal.c</in>
+                <in>strspn.c</in>
+                <in>strstr.c</in>
+                <in>strtok.c</in>
+                <in>strtok_r.c</in>
+              </df>
+              <df name="sys">
+                <in>chmod.c</in>
+                <in>connect.c</in>
+                <in>fstat.c</in>
+                <in>ioctl.c</in>
+                <in>lstat.c</in>
+                <in>mkdir.c</in>
+                <in>mount.c</in>
+                <in>select.c</in>
+                <in>socket.c</in>
+                <in>stat.c</in>
+                <in>stime.c</in>
+                <in>umask.c</in>
+                <in>umount.c</in>
+                <in>utime.c</in>
+                <in>utimes.c</in>
+                <in>wait.c</in>
+                <in>wait3.c</in>
+                <in>wait4.c</in>
+                <in>waitpid.c</in>
+              </df>
+              <df name="termios">
+                <in>tcflow.c</in>
+                <in>tcflush.c</in>
+                <in>tcgetattr.c</in>
+                <in>tcgetpgrp.c</in>
+                <in>tcsetattr.c</in>
+                <in>tcsetpgrp.c</in>
+              </df>
+              <df name="time">
+                <in>asctime.c</in>
+                <in>asctime_r.c</in>
+                <in>ctime.c</in>
+                <in>ctime_r.c</in>
+                <in>gettimeofday.c</in>
+                <in>gmtime.c</in>
+                <in>gmtime_r.c</in>
+                <in>localtime.c</in>
+                <in>localtime_r.c</in>
+                <in>mktime.c</in>
+                <in>nanosleep.c</in>
+                <in>strftime.c</in>
+                <in>time.c</in>
+                <in>time_int.c</in>
+                <in>time_int.h</in>
+                <in>tzset.c</in>
+              </df>
+              <df name="trio">
+                <in>trio.c</in>
+                <in>trio.h</in>
+                <in>triodef.h</in>
+                <in>trionan.c</in>
+                <in>trionan.h</in>
+                <in>triop.h</in>
+                <in>triostr.c</in>
+                <in>triostr.h</in>
+              </df>
+              <df name="unistd">
+                <in>access.c</in>
+                <in>alarm.c</in>
+                <in>chdir.c</in>
+                <in>chown.c</in>
+                <in>close.c</in>
+                <in>dup.c</in>
+                <in>dup2.c</in>
+                <in>execlp.c</in>
+                <in>execv.c</in>
+                <in>execve.c</in>
+                <in>execvp.c</in>
+                <in>exit.c</in>
+                <in>fchdir.c</in>
+                <in>fork.c</in>
+                <in>fpathconf.c</in>
+                <in>ftruncate.c</in>
+                <in>getcwd.c</in>
+                <in>getdents.c</in>
+                <in>getdtablesize.c</in>
+                <in>getegid.c</in>
+                <in>geteuid.c</in>
+                <in>getgid.c</in>
+                <in>gethostname.c</in>
+                <in>getpgid.c</in>
+                <in>getpgrp.c</in>
+                <in>getpid.c</in>
+                <in>getppid.c</in>
+                <in>gettid.c</in>
+                <in>getuid.c</in>
+                <in>isatty.c</in>
+                <in>link.c</in>
+                <in>lseek.c</in>
+                <in>mmap.c</in>
+                <in>pipe.c</in>
+                <in>pread.c</in>
+                <in>pwrite.c</in>
+                <in>read.c</in>
+                <in>readlink.c</in>
+                <in>rmdir.c</in>
+                <in>sbrk.c</in>
+                <in>setgid.c</in>
+                <in>setpgid.c</in>
+                <in>setpgrp.c</in>
+                <in>setregid.c</in>
+                <in>setreuid.c</in>
+                <in>setuid.c</in>
+                <in>sleep.c</in>
+                <in>symlink.c</in>
+                <in>ttyname.c</in>
+                <in>unlink.c</in>
+                <in>write.c</in>
+              </df>
+              <in>closedir.c</in>
+              <in>opendir.c</in>
+              <in>readdir.c</in>
+              <in>rewinddir.c</in>
+              <in>sscanf.c</in>
+              <in>start.c</in>
+              <in>udivmoddi4.c</in>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="userland">
+        <df name="helloworld">
+          <in>main.c</in>
+        </df>
+      </df>
+      <in>boot.asm</in>
+      <in>kernel.cpp</in>
+      <in>putc.cpp</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
